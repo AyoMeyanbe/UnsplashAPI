@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.loader {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    padding: 0, 100px;
+}
+
+.loader .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffecec;
+    border-radius: 50%;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.loader .dot:nth-child(2) {
+    animation-delay: 100ms;
+}
+.loader .dot:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+@keyframes bounce {
+    100% {
+        translate: 0-10px;
+    }
+}
